@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-forms';
+  favoriteColorControl = new FormControl('color Reactive Forms');
+  favoriteColor = 'color Template Driven ';
+  nome: string;
 }
