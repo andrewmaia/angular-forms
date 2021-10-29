@@ -1,0 +1,7 @@
+.ng-invalid {
+    border: 5px solid #a94442; /* red */
+  }
+
+  .ng-valid[required], .ng-valid.required  {
+    border: 5px solid #42A948; /* green */
+  }

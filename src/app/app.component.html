@@ -20,4 +20,20 @@ Validação em Template Driven
         Não pode ser Andrew.
       </div>      
 </div>
-
+<br/>
+Cross Field Validation em Template Driven
+<form #form="ngForm" appSenhaIgual>
+  Senha
+  <input type="password"
+  id="senha"
+  name="senha"
+  [(ngModel)]="senha">
+  Confirmação
+  <input type="password"
+  id="senhaConfirmacao"
+  name="senhaConfirmacao"
+  [(ngModel)]="senhaConfirmacao">  
+  <div *ngIf="form.errors?.senhasNaoBatem && (form.touched || form.dirty)" >
+    As senhas não batem
+</div>
+</form>

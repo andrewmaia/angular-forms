@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextoProibidoDirective } from './texto-proibido.directive';
+import { SenhaIgualDirective } from './senha-igual.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextoProibidoDirective
+    TextoProibidoDirective,
+    SenhaIgualDirective
   ],
   imports: [
     BrowserModule,

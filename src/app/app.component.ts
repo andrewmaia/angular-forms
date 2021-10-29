@@ -10,4 +10,6 @@ export class AppComponent {
   favoriteColorControl = new FormControl('color Reactive Forms');
   favoriteColor = 'color Template Driven ';
   nome: string;
+  senha: string;
+  senhaConfirmacao: string;    
 }
